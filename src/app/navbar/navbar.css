@@ -1,0 +1,41 @@
+nav {
+  display: flex;
+  background: #060023;
+  padding: .25rem 1rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  max-width: 100px;
+}
+
+div {
+  flex-grow: 1;
+  max-width: 600px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+li {
+  color: white;
+}
+
+li:first-of-type:hover {
+  color: #3f5efb;
+}
+
+li:hover {
+  color: #9c52b4;
+  transition: ease-in-out .5s;
+}
+
+li:last-of-type:hover {
+  color: #fa466c;
+}

@@ -1,0 +1,25 @@
+.card {
+  padding: 10px;
+  color: black;
+  width: 150px;
+  height: 150px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 600;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px #fb466c;
+  filter: drop-shadow(0 0 5px aqua);
+}
+
+img {
+  max-height: 100px;
+}
+
+p {
+  margin: 1rem;
+}
+
