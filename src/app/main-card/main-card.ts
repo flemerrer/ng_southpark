@@ -3,20 +3,21 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {TitleCasePipe} from "@angular/common";
 import {CharacterCard} from '../character-card/character-card';
 import {combineLatestAll} from 'rxjs';
+import {Character} from '../types/character';
 
 @Component({
-  selector: 'app-title-card',
+  selector: 'app-main-card',
   imports: [
     FormsModule,
     TitleCasePipe,
     CharacterCard,
   ],
-  templateUrl: './title-card.html',
-  styleUrl: './title-card.css',
+  templateUrl: './main-card.html',
+  styleUrl: './main-card.css',
 })
 export class TitleCard {
   protected readonly title: string = 'Welcome to South Park'
-  protected readonly characters: Array<{ id: number, firstName: string, lastName: string, img: string }> = [
+  protected readonly characters: Character[] = [
     {id: 1, firstName: "Eric", lastName: "Cartman", img: "/characters/eric.jpg"},
     {id: 2, firstName: "Stan", lastName: "Marsh", img: "/characters/stan.jpg"},
     {id: 3, firstName: "Kenny", lastName: "McCormick", img: "/characters/kenny.jpg"},

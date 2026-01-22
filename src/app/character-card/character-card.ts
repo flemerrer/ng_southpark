@@ -1,4 +1,5 @@
-import {Component, Input, WritableSignal} from '@angular/core';
+import {Component, input, InputSignal} from '@angular/core';
+import {Character} from '../types/character';
 
 @Component({
   selector: 'app-character-card',
@@ -7,6 +8,6 @@ import {Component, Input, WritableSignal} from '@angular/core';
   styleUrl: './character-card.css',
 })
 export class CharacterCard {
-  @Input() character!: { id: number, firstName: string, lastName: string, img: string };
-  @Input() isDead!: WritableSignal<boolean>
+  character = input<Character>({id:0, img:'', firstName:'', lastName:''});
+  isDead = input<boolean>(false)
 }

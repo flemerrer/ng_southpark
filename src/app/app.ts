@@ -1,8 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import {FormsModule} from '@angular/forms';
-import {TitleCasePipe} from '@angular/common';
-import {TitleCard} from './title-card/title-card';
+import {TitleCard} from './main-card/main-card';
 import {Navbar} from './navbar/navbar';
 
 @Component({
