@@ -1,5 +1,5 @@
-import {Component, input, InputSignal} from '@angular/core';
-import {Character} from '../types/character';
+import {Component, Input, input} from '@angular/core';
+import {Character} from '../../types/character';
 
 @Component({
   selector: 'app-character-card',
@@ -8,6 +8,7 @@ import {Character} from '../types/character';
   styleUrl: './character-card.css',
 })
 export class CharacterCard {
+  // @Input() character!: Character
   character = input<Character>({id:0, img:'', firstName:'', lastName:''});
   isDead = input<boolean>(false)
 }

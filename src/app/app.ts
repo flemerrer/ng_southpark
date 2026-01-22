@@ -1,13 +1,13 @@
-import { Component, signal } from '@angular/core';
-import {TitleCard} from './main-card/main-card';
+import { Component } from '@angular/core';
 import {Navbar} from './navbar/navbar';
+import {RouterOutlet} from '@angular/router';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.html',
   imports: [
-    TitleCard,
-    Navbar
+    Navbar,
+    RouterOutlet
   ],
   styleUrl: './app.css'
 })

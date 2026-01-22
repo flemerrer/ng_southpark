@@ -23,10 +23,6 @@ ul {
   gap: 2rem;
 }
 
-li {
-  color: white;
-}
-
 li:first-of-type:hover {
   color: #3f5efb;
 }
@@ -38,4 +34,9 @@ li:hover {
 
 li:last-of-type:hover {
   color: #fa466c;
+}
+
+li a {
+  text-decoration: none;
+  color: inherit;
 }
