@@ -24,7 +24,7 @@ body {
 .content {
   grid-column: 2;
   min-width: 300px;
-  max-width: 800px;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   border-radius: 25px;

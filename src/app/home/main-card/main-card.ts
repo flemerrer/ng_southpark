@@ -29,15 +29,16 @@ export class MainCard {
   addOne = () => {
     this.count++
     if (!this.isDead()) {
+      this.characters[2].img = "/characters/ghost_kenny.png"
       this.isDead.set(true)
     }
     const countNode = document.getElementById("count")
-    if (countNode && this.count == 1) {
+    if (countNode && this.count > 0  && this.count < 5) {
       countNode.classList.add("blue")
-    } else if (countNode && this.count == 2) {
+    } else if (countNode && this.count > 5  && this.count < 10) {
       countNode.classList.remove("blue")
       countNode.classList.add("purple")
-    } else if (countNode && this.count == 5)  {
+    } else if (countNode && this.count > 10)  {
       countNode.classList.remove("purple")
       countNode.classList.add("red")
     }

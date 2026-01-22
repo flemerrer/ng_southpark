@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card" [class.dead]="isDead()">
   <img [alt]="character().firstName" [src]="character().img">
   <p>{{ character().firstName }}<br>{{character().lastName}}</p>
 </div>

@@ -1,7 +1,7 @@
 .card {
   padding: 10px;
   color: black;
-  width: 150px;
+  width: 125px;
   height: 150px;
   align-items: center;
   justify-content: center;
@@ -23,3 +23,7 @@ p {
   margin: 1rem;
 }
 
+.dead {
+  background: none;
+  color:white;
+}
