@@ -4,7 +4,7 @@ import {TitleCasePipe} from "@angular/common";
 import {CharacterCard} from '../character-card/character-card';
 import {combineLatestAll} from 'rxjs';
 import {Character} from '../../types/character';
-import {Characters} from '../../services/characters.service';
+import {CharacterService} from '../../services/character.service';
 
 @Component({
 	selector: 'app-main-card',
@@ -21,7 +21,7 @@ export class MainCard {
 	// constructor(private readonly characterService: Characters) {
 	// 	this.characters = this.characterService.getCharacters();
 	// }
-	private characterService = inject(Characters)
+	private characterService = inject(CharacterService)
 	protected readonly title: string = 'Welcome to South Park'
 	protected readonly characters: Character[] = this.characterService.getCharacters();
 	count: number = 0

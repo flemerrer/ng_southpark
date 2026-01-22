@@ -4,7 +4,7 @@ import {Character} from '../types/character';
 @Injectable({
   providedIn: 'root',
 })
-export class Characters {
+export class CharacterService {
   // Mock DB
   protected readonly characters: Character[] = [
     {id: 1, firstName: "Eric", lastName: "Cartman", img: "/characters/eric.jpg"},
